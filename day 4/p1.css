@@ -1,0 +1,62 @@
+/* this ia an example of relative css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    background-color: #f0f2f5;
+    
+    /* Center the card relative to the entire height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+
+/* The Card Container */
+.card {
+    background-color: #ffffff;
+    /* Takes up 90% of screen width on mobile, caps out at 400px on desktop */
+    width: 90%;
+    max-width: 400px;
+    
+    /* Relative padding scaled based on the element's current font size */
+    padding: 2.5em;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Text elements using relative scaling (em) */
+.card-title {
+    color: #1a1a1a;
+    font-size: 1.75em;
+    margin-bottom: 0.5em; /* Spacing scales relative to the title size */
+}
+
+.card-text {
+    color: #666666;
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 1.5em;
+}
+
+/* Button with relative inner padding */
+.card-btn {
+    background-color: #0076ff;
+    color: white;
+    border: none;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0.75em 1.5em; /* Button grows nicely if text size changes */
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.card-btn:hover {
+    background-color: #005ccc;
+}
