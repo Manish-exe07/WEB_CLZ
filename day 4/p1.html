@@ -1,22 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Profile Card</title>
-    <!-- Linking the external CSS file below -->
-    <link rel="stylesheet" href="p1.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Blog — Manish</title>
+<link rel="stylesheet" href="p1.css">
 </head>
 <body>
 
-    <!-- Main wrapper centered relatively on the screen -->
-    <div class="card">
-        <h1 class="card-title">Hello, World!</h1>
-        <p class="card-text">
-            This is a simple profile card component styled using relative CSS units like percentages and ems.
-        </p>
-        <button class="card-btn">Click Me</button>
+  <header class="site-header">
+    <div class="wrap">
+      <p class="eyebrow"> </p>
+      <h1 class="blog-title">Welcome to my blog</h1>
+      <p class="tagline">Sharing thoughts, ideas, and things I'm learning along the way.</p>
+      <nav class="main-nav">
+        <a href="#" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#post">Post</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
+  </header>
+
+  <section class="article" id="post">
+    <div class="wrap">
+      <p class="kicker"> </p>
+      <h2 class="post-title">First Blog Post</h2>
+      <p class="post-meta">Published on July 13, 2026</p>
+      <div class="post-body">
+        <p>This is the content of my first blog. More posts coming soon — thanks for stopping by.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="wrap">
+      <h2 class="section-label">About me</h2>
+      <div class="about-card">
+        <div class="avatar"> </div>
+        <div class="about-copy">
+          <h3>Manish</h3>
+          <p class="role">Front-end Developer</p>
+        </div>
+        <div class="bio-card">
+          <span class="status-dot"></span>
+          <p>Hello! I am Manish, and this is my blog. This card shows a little about who I am and what I like to write about.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer" id="contact">
+    <div class="wrap" style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; width:100%;">
+      <span><strong>&copy; 2026</strong> My Blog. All rights reserved.</span>
+    </div>
+  </footer>
 
 </body>
 </html>
