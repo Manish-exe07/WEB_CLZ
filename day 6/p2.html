@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Samagri — Everything, Sorted</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,900&family=Work+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="p2.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#top" class="logo">Samagri<span class="logo-dot">.</span></a>
+
+    <input type="checkbox" id="navToggle" class="nav-toggle" aria-hidden="true">
+
+    <nav class="main-nav">
+      <a href="#electronics">Electronics</a>
+      <a href="#food">Food</a>
+      <a href="#clothing">Clothing</a>
+      <a href="#categories">All Categories</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="search-box">
+        <input type="text" placeholder="Search for sukuti, kurta, headphones…" id="searchInput">
+        <button aria-label="Search" class="search-btn">⌕</button>
+      </div>
+      <button class="cart-btn" id="cartBtn" aria-label="Cart">
+        <span class="cart-icon">🛍</span>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <label for="navToggle" class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </label>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="garland" aria-hidden="true" id="garland"></div>
+
+  <div class="hero-inner">
+    <p class="eyebrow">Kathmandu's Marketplace — Now Online</p>
+    <h1 class="hero-title">Every stall.<br>One signboard.</h1>
+    <p class="hero-sub">Samagri means "goods" — from fresh sukuti and festival kurta to the electronics
+      for your next project. Everything you need, sorted right.</p>
+    <div class="hero-ctas">
+      <a href="#categories" class="cta cta-primary">Start Browsing</a>
+      <a href="#electronics" class="cta cta-ghost">Today's Deals</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CATEGORIES ============ -->
+<section class="categories" id="categories">
+  <div class="section-head">
+    <p class="section-eyebrow">सामग्री</p>
+    <h2>Browse the stalls</h2>
+  </div>
+
+  <div class="category-grid">
+    <a href="#electronics" class="cat-card cat-tilt-1">
+      <span class="cat-icon">💻</span>
+      <span class="cat-name">Electronics</span>
+      <span class="cat-count">340+ items</span>
+    </a>
+    <a href="#food" class="cat-card cat-tilt-2">
+      <span class="cat-icon">🌾</span>
+      <span class="cat-name">Food</span>
+      <span class="cat-count">610+ items</span>
+    </a>
+    <a href="#clothing" class="cat-card cat-tilt-3">
+      <span class="cat-icon">👕</span>
+      <span class="cat-name">Clothing</span>
+      <span class="cat-count">480+ items</span>
+    </a>
+    <a href="#" class="cat-card cat-tilt-1">
+      <span class="cat-icon">🏠</span>
+      <span class="cat-name">Home &amp; Living</span>
+      <span class="cat-count">220+ items</span>
+    </a>
+    <a href="#" class="cat-card cat-tilt-2">
+      <span class="cat-icon">💄</span>
+      <span class="cat-name">Beauty</span>
+      <span class="cat-count">150+ items</span>
+    </a>
+    <a href="#" class="cat-card cat-tilt-3">
+      <span class="cat-icon">📚</span>
+      <span class="cat-name">Books &amp; Stationery</span>
+      <span class="cat-count">95+ items</span>
+    </a>
+  </div>
+</section>
+
+<!-- ============ DEALS MARQUEE ============ -->
+<section class="deals-marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>🔥 Dashain Sale — up to 40% off Electronics</span>
+    <span>🚚 Free delivery inside Kathmandu Valley</span>
+    <span>🌾 Fresh stock added daily in Food</span>
+    <span>👕 New Clothing arrivals every Friday</span>
+    <span>🔥 Dashain Sale — up to 40% off Electronics</span>
+    <span>🚚 Free delivery inside Kathmandu Valley</span>
+    <span>🌾 Fresh stock added daily in Food</span>
+    <span>👕 New Clothing arrivals every Friday</span>
+  </div>
+</section>
+
+<!-- ============ ELECTRONICS ============ -->
+<section class="products" id="electronics">
+  <div class="products-header">
+    <h2>Electronics</h2>
+    <span class="tag">Best sellers</span>
+  </div>
+  <div class="product-grid">
+
+    <div class="product-card">
+      <div class="thumb thumb-electronics"><span>🎧</span></div>
+      <h3>Over-Ear Wireless Headphones</h3>
+      <p class="desc">30-hour battery, active noise cancelling</p>
+      <div class="price-row">
+        <span class="price">Rs. 4,290</span>
+        <button class="add-btn" data-name="Wireless Headphones">Add</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="thumb thumb-electronics"><span>📱</span></div>
+      <h3>SmartLite X2 Phone</h3>
+      <p class="desc">6.5" display, 5000mAh battery</p>
+      <div class="price-row">
+        <span class="price">Rs. 22,999</span>
+        <button class="add-btn" data-name="SmartLite X2 Phone">Add</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="thumb thumb-electronics"><span>⌨️</span></div>
+      <h3>Mechanical Keyboard</h3>
+      <p class="desc">Hot-swappable switches, RGB backlight</p>
+      <div class="price-row">
+        <span class="price">Rs. 3,150</span>
+        <button class="add-btn" data-name="Mechanical Keyboard">Add</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="thumb thumb-electronics"><span>📷</span></div>
+      <h3>Compact Mirrorless Camera</h3>
+      <p class="desc">24MP sensor, 4K video recording</p>
+      <div class="price-row">
+        <span class="price">Rs. 68,500</span>
+        <button class="add-btn" data-name="Mirrorless Camera">Add</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ FOOD ============ -->
+<section class="products alt" id="food">
+  <div class="products-header">
+    <h2>Food</h2>
+    <span class="tag">Fresh today</span>
+  </div>
+  <div class="product-grid">
+
+    <div class="product-card">
+      <div class="thumb thumb-food"><span>🍖</span></div>
+      <h3>Homestyle Sukuti</h3>
+      <p class="desc">Sun-dried, smoked buffalo meat, 250g</p>
+      <div class="price-row">
+        <span class="price">Rs. 650</span>
+        <button class="add-btn" data-name="Homestyle Sukuti">Add</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="thumb thumb-food"><span>🍚</span></div>
+      <h3>Jumli Marsi Rice</h3>
+      <p class="desc">Organic mountain-grown rice, 5kg</p>
+      <div class="price-row">
+        <span class="price">Rs. 980</span>
+        <button class="add-btn" data-name="Jumli Marsi Rice">Add</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="thumb thumb-food"><span>🥭</span></div>
+      <h3>Seasonal Fruit Box</h3>
+      <p class="desc">Hand-picked, mixed local fruits, 3kg</p>
+      <div class="price-row">
+        <span class="price">Rs. 720</span>
+        <button class="add-btn" data-name="Seasonal Fruit Box">Add</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="thumb thumb-food"><span>🍯</span></div>
+      <h3>Wild Mountain Honey</h3>
+      <p class="desc">Raw, unfiltered, 500ml jar</p>
+      <div class="price-row">
+        <span class="price">Rs. 890</span>
+        <button class="add-btn" data-name="Wild Mountain Honey">Add</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ CLOTHING ============ -->
+<section class="products" id="clothing">
+  <div class="products-header">
+    <h2>Clothing</h2>
+    <span class="tag">Festival ready</span>
+  </div>
+  <div class="product-grid">
+
+    <div class="product-card">
+      <div class="thumb thumb-clothing"><span>👗</span></div>
+      <h3>Embroidered Kurta Set</h3>
+      <p class="desc">Cotton blend, hand-embroidered neckline</p>
+      <div class="price-row">
+        <span class="price">Rs. 2,450</span>
+        <button class="add-btn" data-name="Embroidered Kurta Set">Add</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="thumb thumb-clothing"><span>🧥</span></div>
+      <h3>Wool Blend Jacket</h3>
+      <p class="desc">Windproof lining, built for the hills</p>
+      <div class="price-row">
+        <span class="price">Rs. 3,800</span>
+        <button class="add-btn" data-name="Wool Blend Jacket">Add</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="thumb thumb-clothing"><span>🧣</span></div>
+      <h3>Handwoven Pashmina Scarf</h3>
+      <p class="desc">100% pure pashmina, dyed in-house</p>
+      <div class="price-row">
+        <span class="price">Rs. 1,650</span>
+        <button class="add-btn" data-name="Pashmina Scarf">Add</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="thumb thumb-clothing"><span>👟</span></div>
+      <h3>Trail Running Shoes</h3>
+      <p class="desc">Grip sole for wet cobblestone streets</p>
+      <div class="price-row">
+        <span class="price">Rs. 4,100</span>
+        <button class="add-btn" data-name="Trail Running Shoes">Add</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ TRUST STRIP ============ -->
+<section class="trust">
+  <div class="trust-item">
+    <span class="trust-icon">🚚</span>
+    <p>Free delivery<br><small>Inside Kathmandu Valley</small></p>
+  </div>
+  <div class="trust-item">
+    <span class="trust-icon">💵</span>
+    <p>Cash on delivery<br><small>Pay when it arrives</small></p>
+  </div>
+  <div class="trust-item">
+    <span class="trust-icon">↩️</span>
+    <p>7-day returns<br><small>No questions asked</small></p>
+  </div>
+  <div class="trust-item">
+    <span class="trust-icon">🔒</span>
+    <p>Secure checkout<br><small>Your data stays yours</small></p>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="logo">Samagri<span class="logo-dot">.</span></div>
+      <p>Kathmandu's stalls, sorted onto one shelf.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <a href="#electronics">Electronics</a>
+      <a href="#food">Food</a>
+      <a href="#clothing">Clothing</a>
+    </div>
+    <div class="footer-col">
+      <h4>Help</h4>
+      <a href="#">Track Order</a>
+      <a href="#">Returns</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="footer-col newsletter">
+      <h4>Get restock alerts</h4>
+      <form onsubmit="return false;">
+        <input type="email" placeholder="you@email.com">
+        <button type="submit">Notify me</button>
+      </form>
+    </div>
+  </div>
+  <p class="copyright">© 2026 Samagri. Made in Maitidevi, Kathmandu.</p>
+</footer>
+
+<script>
+  // Garland: build flags with slightly varied timing so the sway feels windblown, not robotic.
+  const garland = document.getElementById('garland');
+  const colors = ['flag-red','flag-gold','flag-green','flag-white','flag-blue'];
+  const flagCount = 22;
+  for (let i = 0; i < flagCount; i++) {
+    const flag = document.createElement('span');
+    flag.className = 'flag ' + colors[i % colors.length];
+    flag.style.animationDelay = (i * 0.12) + 's';
+    flag.style.animationDuration = (2.2 + Math.sin(i) * 0.5) + 's';
+    garland.appendChild(flag);
+  }
+
+  // Mobile: tapping the search icon expands + focuses the input.
+  const searchBox = document.querySelector('.search-box');
+  const searchInput = document.getElementById('searchInput');
+  document.querySelector('.search-btn').addEventListener('click', (e) => {
+    if (window.innerWidth <= 520) {
+      e.preventDefault();
+      searchBox.classList.toggle('expanded');
+      if (searchBox.classList.contains('expanded')) searchInput.focus();
+    }
+  });
+
+  // Mobile: close the dropdown nav after picking a link.
+  const navToggle = document.getElementById('navToggle');
+  document.querySelectorAll('.main-nav a').forEach(link => {
+    link.addEventListener('click', () => { navToggle.checked = false; });
+  });
+
+  // Scroll-triggered reveal: cards rise into place the first time they enter view.
+  const revealEls = document.querySelectorAll('.cat-card, .product-card, .trust-item, .section-head, .products-header');
+  revealEls.forEach(el => el.classList.add('reveal'));
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => revealObserver.observe(el));
+
+  // Add to cart: a small icon flies from the button to the cart, then the cart pops.
+  const cartCount = document.getElementById('cartCount');
+  const cartBtn = document.getElementById('cartBtn');
+  const cartIcon = document.querySelector('.cart-icon');
+  let count = 0;
+
+  function flyToCart(button) {
+    const from = button.getBoundingClientRect();
+    const to = cartIcon.getBoundingClientRect();
+    const flyer = document.createElement('span');
+    flyer.className = 'flyer';
+    flyer.textContent = '🛍';
+    flyer.style.left = from.left + from.width / 2 + 'px';
+    flyer.style.top = from.top + 'px';
+    document.body.appendChild(flyer);
+
+    requestAnimationFrame(() => {
+      const dx = to.left - from.left;
+      const dy = to.top - from.top;
+      flyer.style.transform = `translate(${dx}px, ${dy}px) scale(0.25) rotate(20deg)`;
+      flyer.style.opacity = '0';
+    });
+
+    setTimeout(() => {
+      flyer.remove();
+      cartBtn.classList.remove('pop');
+      void cartBtn.offsetWidth;
+      cartBtn.classList.add('pop');
+    }, 550);
+  }
+
+  document.querySelectorAll('.add-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      flyToCart(btn);
+      count++;
+      setTimeout(() => { cartCount.textContent = count; }, 550);
+
+      const original = btn.textContent;
+      btn.textContent = 'Added ✓';
+      btn.classList.add('added');
+      setTimeout(() => {
+        btn.textContent = original;
+        btn.classList.remove('added');
+      }, 1100);
+    });
+  });
+</script>
+
+</body>
+</html>
